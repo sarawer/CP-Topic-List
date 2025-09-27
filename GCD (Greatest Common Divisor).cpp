@@ -24,5 +24,6 @@ int32_t main(){
 	int a,b;
 	cin>>a>>b;
 	cout<<gcd1(a,b)<<endl;
-	cout<<gcd2(a,b)<<endl;	
+	cout<<gcd2(a,b)<<endl;
+	cout<<__gcd(a,b); //Using Library Functions
 }
