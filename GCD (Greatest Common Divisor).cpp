@@ -25,5 +25,9 @@ int32_t main(){
 	cin>>a>>b;
 	cout<<gcd1(a,b)<<endl;
 	cout<<gcd2(a,b)<<endl;
-	cout<<__gcd(a,b); //Using Library Functions
+	cout<<__gcd(a,b)<<endl; //Using Library Functions
+	
+	//Least Common Multiple(LCM)= (a*b)/gcd(a,b)
+	cout<<(a*b)/gcd(a,b);
+	
 }
