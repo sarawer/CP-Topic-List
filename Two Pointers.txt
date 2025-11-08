@@ -1,0 +1,26 @@
+//Finds if any two numbers in the array sum to a target t.
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int n,t;
+    cin>>n>>t;
+    vector<int>v(n);
+    for(int i=0;i<n;i++)cin>>v[i];
+
+    sort(v.begin(),v.end());
+
+    int l=0,r=n-1;
+    bool ans=false;
+
+    while(l<r){
+        if(v[l]+v[r]==t){
+            ans=true;
+            break;
+        }else if(v[l]+v[r]<t)l++;
+         else if(v[l]+v[r]>t)r--;
+    }
+    if(ans)cout<<"Found";
+    else cout<<"Not Found";
+}
+
